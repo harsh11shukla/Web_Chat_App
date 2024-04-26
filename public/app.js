@@ -1,5 +1,4 @@
-const socket = io('https://web-chat-app-pji0.onrender.com')
-
+const socket = io('ws://localhost:3500')
 const msgInput = document.querySelector('#message')
 const nameInput = document.querySelector('#name')
 const chatRoom = document.querySelector('#room')
