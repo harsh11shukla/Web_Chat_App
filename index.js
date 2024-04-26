@@ -30,7 +30,7 @@ const UsersState = {
 
 const io= new Server(expressServer,{
   cors:{
-    origin:"*"
+    origin:process.env.NODE_ENV === "production" ? false : ["http://localhost:5500","http://127.0.0.1:5500"]
   }
 })
 
